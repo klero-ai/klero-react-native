@@ -1,5 +1,5 @@
 {
-  "name": "@klero/react-native",
+  "name": "@kleroai/react-native",
   "version": "0.1.0",
   "description": "React Native SDK for Klero surveys and feedback widgets",
   "main": "lib/commonjs/index.js",

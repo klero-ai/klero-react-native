@@ -56,7 +56,7 @@ function escapeForHtmlAttr(str: string): string {
  *
  * @example
  * ```tsx
- * import { KleroSurvey } from '@klero/react-native';
+ * import { KleroSurvey } from '@kleroai/react-native';
  *
  * function App() {
  *   return (

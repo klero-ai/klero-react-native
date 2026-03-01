@@ -1,13 +1,13 @@
-# @klero/react-native
+# @kleroai/react-native
 
 React Native SDK for displaying Klero surveys and feedback widgets in your mobile app.
 
 ## Installation
 
 ```bash
-npm install @klero/react-native react-native-webview
+npm install @kleroai/react-native react-native-webview
 # or
-yarn add @klero/react-native react-native-webview
+yarn add @kleroai/react-native react-native-webview
 ```
 
 ### iOS Setup
@@ -33,7 +33,7 @@ import {
   KleroRoadmap,
   KleroChangelog,
   KleroWidget,
-} from '@klero/react-native';
+} from '@kleroai/react-native';
 
 // Generic component
 <KleroEmbed projectSlug="myproject" embedType="feedback" />
@@ -53,7 +53,7 @@ With programmatic control:
 
 ```tsx
 import { useRef } from 'react';
-import { KleroFeedback, KleroEmbedHandle } from '@klero/react-native';
+import { KleroFeedback, KleroEmbedHandle } from '@kleroai/react-native';
 
 const ref = useRef<KleroEmbedHandle>(null);
 <KleroFeedback ref={ref} projectSlug="myproject" />
@@ -65,7 +65,7 @@ ref.current?.reload();
 ### Basic Survey
 
 ```tsx
-import { KleroSurvey } from '@klero/react-native';
+import { KleroSurvey } from '@kleroai/react-native';
 
 function App() {
   return (
@@ -92,7 +92,7 @@ function App() {
 ```tsx
 import { useRef } from 'react';
 import { Button, View } from 'react-native';
-import { KleroSurvey, KleroSurveyHandle } from '@klero/react-native';
+import { KleroSurvey, KleroSurveyHandle } from '@kleroai/react-native';
 
 function App() {
   const surveyRef = useRef<KleroSurveyHandle>(null);
@@ -126,7 +126,7 @@ function App() {
 ### With Customer Token
 
 ```tsx
-import { KleroSurvey } from '@klero/react-native';
+import { KleroSurvey } from '@kleroai/react-native';
 
 function App() {
   return (
@@ -147,7 +147,7 @@ function App() {
 For self-hosted or custom domain setups:
 
 ```tsx
-import { KleroSurvey } from '@klero/react-native';
+import { KleroSurvey } from '@kleroai/react-native';
 
 function App() {
   return (
@@ -239,7 +239,7 @@ For more granular event handling:
 
 ```tsx
 import { useEffect } from 'react';
-import { useKleroEvents } from '@klero/react-native';
+import { useKleroEvents } from '@kleroai/react-native';
 
 function App() {
   const { on } = useKleroEvents();

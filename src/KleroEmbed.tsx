@@ -49,7 +49,7 @@ function escapeForHtmlAttr(str: string): string {
  *
  * @example
  * ```tsx
- * import { KleroEmbed } from '@klero/react-native';
+ * import { KleroEmbed } from '@kleroai/react-native';
  *
  * function App() {
  *   return (

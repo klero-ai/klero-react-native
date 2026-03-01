@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@klero/react-native": "file:..",
+    "@kleroai/react-native": "file:..",
     "@react-native-community/cli-platform-android": "^12.3.7",
     "@react-native-community/cli-platform-ios": "^12.3.7",
     "@react-native/gradle-plugin": "^0.73.0",

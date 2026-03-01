@@ -7,7 +7,7 @@ const config = {
   watchFolders: [root],
   resolver: {
     extraNodeModules: {
-      '@klero/react-native': root,
+      '@kleroai/react-native': root,
     },
   },
 };

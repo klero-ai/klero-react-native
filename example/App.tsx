@@ -19,7 +19,7 @@ import {
   KleroEmbedHandle,
   KleroSurvey,
   KleroSurveyHandle,
-} from '@klero/react-native';
+} from '@kleroai/react-native';
 
 // Config matching iOS and Android examples
 const PROJECT_SLUG = 'feedback';
