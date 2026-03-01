@@ -1,0 +1,76 @@
+{
+  "name": "@klero/react-native",
+  "version": "0.1.0",
+  "description": "React Native SDK for Klero surveys and feedback widgets",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "clean": "del-cli lib",
+    "prepare": "bob build"
+  },
+  "keywords": [
+    "react-native",
+    "klero",
+    "survey",
+    "feedback",
+    "nps",
+    "csat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klero-ai/klero-react-native.git"
+  },
+  "author": "Klero <support@klero.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klero-ai/klero-react-native/issues"
+  },
+  "homepage": "https://github.com/klero-ai/klero-react-native#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.0.0",
+    "react": "^18.2.0",
+    "react-native": "^0.72.0",
+    "react-native-builder-bob": "^0.23.0",
+    "react-native-webview": "^13.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.60.0",
+    "react-native-webview": ">=11.0.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  }
+}
